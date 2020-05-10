@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	background-color: #ffffff;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	overflow-x: hidden;
+}
+
+header nav {
+	background-color: #ffffff;
+	width: 100%;
+    font-size: 0;
+    vertical-align: middle;
+    text-align: center;
+	height: 5.6rem;
+	line-height: 5.6rem;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+header nav .logo {
+	width: 20%;
+	text-align: center;
+	font-size: 16px;
+}
+header nav .nav-common {
+	display: inline-block;
+}
+header nav ul {
+	width: 30%;
+	list-style: none;
+	/*  font-size: 0;*/
+	font-size: 14px;
+}
+
+header nav ul li {
+	display: inline-block;
+	width: 28%;
+	text-align: center;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	color: rgb(89, 89, 89);
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color: rgba(89, 89, 89, 0.6);
+}
+
+header nav .nav-icon {
+	width: 7.5%;
+	text-align: center;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+	header nav {
+		height: 5rem;
+		line-height: 5rem;
+	}
+	header nav .logo {
+		width: 45%;
+	}
+	header nav .nav-icon img {
+		margin-top: 1.4rem;
+	}
+	header nav ul {
+		width: 20%;
+		display: none;
+	}
+	header nav ul li {
+		display: none;
+	}
+	header nav .cart {
+		width: 15%;
+		text-align: right;
+	}
+	header nav .menu {
+		width: 20%;
+	}
+}
+
+#header-hero {
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: slideBg 32s linear infinite 2s;
+	animation-timing-function: ease-in-out;
+	background-image: url('../img/food2a.jpg');
+}
+@keyframes slideBg {
+	0% {
+		background-image: url('../img/food2a.jpg');
+	}
+	12.5% {
+		background-image: url('../img/food-photo.jpeg');
+	}
+	25% {
+		background-image: url('../img/chef-food.jpeg');
+	}
+	37.5% {
+		background-image: url('../img/shawarma.jpg');
+	}
+	50% {
+		background-image: url('../img/wine+glass.jpeg');
+	}
+	62.5% {
+		background-image: url('../img/chef-food1.jpeg');
+	}
+	75% {
+		background-image: url('../img/chicken.jpg');
+	}
+	87.5% {
+		background-image: url('../img/food1.jpg');
+	}
+	100% {
+		background-image: url('../img/open.jpeg');
+	}
+}
+
+#header-hero .header-content {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0%;
+	text-align: center;
+	color: #f2f2f2;
+	padding: 2.0rem 0.4rem;
+}
+
+#header-hero .header-content p.heading-1 {
+	text-transform: uppercase;
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 2vw;
+	padding-top: 9vw;
+}
+
+#header-hero .header-content h1 {
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
+	font-size: 3rem;
+	font-style: italic;
+	text-transform: uppercase;
+	margin-bottom: 2.4vw;
+}
+
+#header-hero .header-content h1 .logo-style {
+	color: rgb(161, 18, 18);
+}
+
+#header-hero .header-content p.description {
+	margin: 0 auto;
+	width: 30%;
+	font-family: Cambria;
+	font-size: 1.4rem;
+	font-style: italic;
+	margin-bottom: 5vw;
+}
+
+#header-hero .header-content .button {
+	margin: 0 auto;
+	background-color: rgb(161, 18, 18);
+	-webkit-box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+	width: 10rem;
+	padding: 0.8rem;
+}
+
+#header-hero .header-content .button a {
+	font-family: Cambria;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: justify;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (max-width: 1440px) {
+	#header-hero .header-content p.description {
+		width: 40%;
+		margin-bottom: 3rem;
+		font-size: 1.2rem;
+	}
+	#header-hero .header-content p.heading-1 {
+		padding-top: 8vw;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#header-hero .header-bg {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	#header-hero .header-bg img {
+		width: 100rem;
+		height: 40rem;
+		margin-left: -50%;
+	}
+	#header-hero .header-content p.heading-1 {
+		padding-top: 20vw;
+	}
+	#header-hero .header-content p.description {
+		width: 60%;
+		margin-bottom: 4rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#header-hero .header-content h1 {
+		font-size: 2rem;
+		padding: 1rem 0rem;
+	}
+	#header-hero .header-bg img {
+		width: 100rem;
+		height: 40rem;
+		margin-left: -140%;
+	}
+	#header-hero .header-content p.description {
+		width: 50%;
+		margin-bottom: 3rem;
+		text-align: left;
+	}
+	#header-hero .header-content .button {
+		width: 8rem;
+		padding: 0.6rem;
+	}
+	#header-hero .header-content .button a {
+		font-size: 0.8rem;
+	}
+}
+
+#restaurant {
+	width: 100%;
+	display: block;
+	margin: 6rem 0rem;
+}
+
+#restaurant .container {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #ffffff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#restaurant .container .sc-content {
+	width: 50%;
+	padding-top: 3.4rem;
+	padding-right: 3rem;
+	padding-bottom: 2rem;
+}
+
+#restaurant .container .sc-content h1 {
+	font-family: "monospace";
+	color: #000000;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 1rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 2vw;
+}
+
+#restaurant .container .sc-content p.description {
+	font-family: Cambria;
+	color: rgba(63, 62, 62, 0.8);
+	font-size: 1rem;
+	font-style: italic;
+	line-height: 2rem;
+	text-align: justify;
+	margin-bottom: 4vw;
+	padding-right: 2rem;
+}
+
+#restaurant .container .sc-content a {
+	border-bottom: 2px solid #9e6a42;
+	text-decoration: none;
+	font-family: "Franklin Gothic Medium";
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#restaurant .container .sc-media {
+	width: 50%;
+}
+
+#restaurant .container .sc-media .sc-media-bg {
+	width: 100%;
+	height: auto;
+	padding-top: 3vw;
+}
+
+#restaurant .container .sc-media .sc-media-bg img {
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+	#restaurant {
+		width: 100vw;
+		display: block;
+		margin-top: 0rem;
+	}
+	#restaurant .container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	#restaurant .container .sc-content {
+		width: 80vw;
+		padding: 8rem 2rem 2rem;
+	}
+	#restaurant .container .sc-media {
+		width: 80vw;
+	}
+	#restaurant .container .sc-content h1 {
+		font-size: 5.6vw;
+		letter-spacing: 1rem;
+		line-height: 4rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#restaurant .container .sc-content h1 {
+		font-size: 5.6vw;
+		letter-spacing: 0.6rem;
+		line-height: 2.4rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#restaurant .container .sc-content p.description {
+		font-size: 1rem;
+		line-height: 1.8rem;
+		margin-bottom: 4vw;
+		padding-right: 1.2rem;
+		text-align: justify;
+		margin-bottom: 2rem;
+	}
+}
+
+#menu {
+	width: 100%;
+}
+
+#menu .container {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+#menu .container .menu-header {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+#menu .container .menu-header h2 {
+	padding: 2rem 1rem;
+	text-transform: uppercase;
+	font-family: "Franklin Gothic Medium";
+	color: #000000;
+	font-size: 1.875rem;
+	font-weight: 400;
+	letter-spacing: 0.2rem;
+	line-height: 1;
+	text-align: center;
+}
+
+#menu .container .menu-header p {
+	font-family: Cambria;
+	color: rgba(89, 89, 89, 1);
+	font-size: 1rem;
+	font-style: italic;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#menu .container .menu {
+	width: 33.3%;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	padding: 1.8rem;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+#menu .container .menu:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0.8;
+	-webkit-transition: opacity 800ms ease-in-out 0s;
+	transition: opacity 800ms ease-in-out 0s;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0s;
+	transition: -webkit-transform 1s ease-in-out 0s;
+	transition: transform 1s ease-in-out 0s;
+	transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+	cursor: pointer;
+}
+
+#menu .container .menu figure img {
+	width: 100%;
+	height: auto;
+}
+
+#menu .container .menu figure figcaption {
+	font-family: "Franklin Gothic Medium";
+	color: rgba(89, 89, 89, 1);
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.02rem;
+	text-align: center;
+	padding: 1rem 0rem 0rem;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+	#menu .container .menu {
+		width: 50%;
+		padding: 3rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#menu .container .menu {
+		width: 50%;
+		padding: 2rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#menu .container .menu {
+		width: 100%;
+	}
+}
+
+#contact {
+	width: 100%;
+	height: auto;
+	background-color: rgb(161, 18, 18);
+}
+#contact .container {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 2rem;
+}
+#contact .container h4 {
+	font-family: "Franklin Gothic Medium";
+	color: #ffffff;
+	font-size: 1.125rem;
+	font-weight: 400;
+	letter-spacing: 0.056rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+#contact .container p {
+	font-family: Cambria;
+	color: #ffffff;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.044rem;
+	text-align: center;
+	padding: 0.2rem 0rem;
+}
+@media only screen and (max-width: 800px) {
+	#contact .container p.email {
+		width: 90%;
+	}
+}
+
+.footer {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #333;
+    text-align: center;
+}
+.ft-inner {
+	padding: 0 15px;
+	padding-bottom: 30px;
+	position: relative;
+}
+footer {
+	background-color: #2b2828;
+	font-size: 0;
+	padding: 1.6rem 0rem;
+	width: 100%;
+}
+footer p {
+	font-family: Corbel;
+	color: #f5f2f1;
+	font-weight: 400;
+	font-size: 16px;
+	width: 10%;
+	display: inline-block;
+	text-align: center;
+}
+footer .copy-right {
+	width: 80%;
+	text-align: left;
+	padding-left: 4rem;
+}
+@media only screen and (max-width: 920px) {
+	footer p {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 0.4rem;
+	}
+	footer .copy-right {
+		width: 100%;
+		text-align: center;
+		margin-left: -2.2rem;
+	}
+}
